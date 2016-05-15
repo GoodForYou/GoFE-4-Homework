@@ -4,31 +4,20 @@
 }
 
 body {
+    height: 948px;
     background-color: #f9f9f9;
     font-family: 'Open sans';
     font-size: 13.33px;
 }
 
-.carcass {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 1058px;
-    margin: auto;
-}
-
 .main {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 1058px;
     height: 948px;
     margin: auto;
+    background-color: #fff;
 }
 
-.main img {
+.logo {
     margin-top: 42px;
     margin-left: 46px;
 }
@@ -44,31 +33,26 @@ body {
     background-image: -webkit-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
 }
 
-.menu div {
-    width: 482px;
+.menu li {
+    width: 100px;
     height: 40px;
-    margin-left: 0;
-    line-height: 40px;
-    text-align: justify;
-    text-shadow: .5px .866px 1px rgb(0, 0, 0);
+    margin-right: 44px;
+    float: left;
+    list-style: none;
 }
 
-.menu div::after {
+.menu li a {
     display: inline-block;
-    width: 100%;
-    content: '';
-}
-
-.menu div a {
-    display: inline-block;
-    width: 99px;
+    width: 98px;
     height: 40px;
     color: #fff;
     font-size: 14.67px;
+    line-height: 40px;
     text-align: center;
+    text-shadow: .5px .866px 1px rgb(0, 0, 0);
 }
 
-.menu div a:hover {
+.menu .active {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
     background-image: -moz-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
@@ -76,29 +60,41 @@ body {
 }
 
 .menu-left {
-    width: 240px;
-    height: 240px;
+    width: 238px;
+    height: 238px;
     margin-left: 46px;
     float: left;
     font-size: 13.333px;
+    border-collapse: collapse;
 }
 
-.menu-left div {
+.menu-left li {
     width: 238px;
     height: 39px;
-    padding-left: 24px;
-    border: 1px solid #c8c8c8;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #c8c8c8;
     line-height: 39px;
+    list-style: none;
 }
 
-.menu-left div a {
+.menu-left li:first-child {
+    border-top: 1px solid #c8c8c8;
+}
+
+.menu-left li a {
+    display: block;
+    width: 212px;
+    height: 100%;
+    padding-left: 24px;
     color: rgb(101, 99, 99);
 }
 
-.menu-left div:hover {
-    width: 226px;
+.menu-left li a:hover {
+    width: 202px;
     padding-left: 36px;
     background-color: #f9f9f9;
+    color: #2c2c2c;
 }
 
 .content {
@@ -112,8 +108,9 @@ body {
     border: 1px solid #c8c8c8;
 }
 
-.content div {
-    width: 625px;
+.content p {
+    display: block;
+    width: 635px;
     height: 141px;
     margin-bottom: 59px;
     margin-left: 72px;
@@ -122,7 +119,7 @@ body {
     line-height: 1.6;
 }
 
-.footer {
+footer {
     width: 966px;
     height: 40px;
     margin: auto;
@@ -131,28 +128,32 @@ body {
     font-size: 13.333px;
 }
 
-.footer .links {
-    width: 478px;
-    height: 40px;
-    margin-left: 24px;
+footer .links {
+    width: 576px;
     float: left;
     color: #2c2c2c;
     line-height: 40px;
     text-align: justify;
 }
 
-.footer .links::after {
+.links li {
+    width: 100px;
+    height: 40px;
+    margin-right: 44px;
+    float: left;
+    list-style: none;
+}
+
+.links li a {
     display: inline-block;
-    width: 100%;
-    content: '';
+    width: 98px;
+    height: 40px;
+    color: #2c2c2c;
+    line-height: 40px;
+    text-align: center;
 }
 
-.footer div a {
-    color: #2c2c2c;
-}
-
-.active {
-    color: #2c2c2c;
+.links li .active {
     text-decoration: underline;
 }
 
