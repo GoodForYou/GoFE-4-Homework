@@ -4,26 +4,21 @@
 }
 
 body {
-    width: 1280px;
-    height: 1022px;
     margin: auto;
     background-image: url('../img/background.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #0c739f;
+    background-repeat: repeat-x;
 }
 
-#google-head {
-    position: fixed;
-    top: 0;
-    margin: auto;
-    z-index: 1;
-}
-
-.main {
+.wrapper {
     width: 1000px;
-    height: 986px;
-    margin: 38px 140px 0;
+    height: 100%;
+    margin: auto;
     background-color: #fff;
+}
+
+.header {
+    padding-top: 38px;
 }
 
 .logo {
@@ -58,6 +53,10 @@ body {
     text-align: left;
 }
 
+.contacts p:first-child {
+    font-weight: bold;
+}
+
 .countries {
     width: 360px;
     height: 68px;
@@ -67,21 +66,25 @@ body {
     clear: right;
 }
 
-.countries div {
+.countries li {
     display: inline-block;
     width: 56px;
     height: 68px;
     text-align: center;
 }
 
-.countries div img {
+.countries li img {
     width: 39px;
 }
 
-.countries div a {
+.countries li a {
     color: rgb(18, 138, 167);
     font-family: Tahoma, sans-serif;
     font-size: 10px;
+}
+
+.countries li:hover a {
+    text-decoration: none;
 }
 
 .photo {
@@ -164,9 +167,16 @@ body {
     display: block;
 }
 
+.content {
+    overflow: hidden;
+}
+
 .info {
+    display: inline-block;
     width: 210px;
-    height: 543px;
+    height: 100%;
+    padding-bottom: 100000px;
+    margin-bottom: -100000px;
     float: left;
     background-color: #edeef0;
 }
@@ -189,7 +199,9 @@ body {
 
 .news {
     width: 210px;
-    height: 543px;
+    height: 100%;
+    padding-bottom: 100000px;
+    margin-bottom: -100000px;
     float: right;
     background-color: #edeef0;
 }
@@ -212,6 +224,7 @@ body {
 
 footer {
     height: 36px;
+    clear: both;
     color: #fff;
     font-family: 'Tahoma', sans-serif;
     font-size: 12px;
