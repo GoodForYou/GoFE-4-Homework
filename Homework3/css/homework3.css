@@ -4,7 +4,6 @@
 }
 
 body {
-    height: 948px;
     background-color: #f9f9f9;
     font-family: 'Open sans';
     font-size: 13.33px;
@@ -12,9 +11,11 @@ body {
 
 .main {
     width: 1058px;
-    height: 948px;
-    margin: auto;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
     background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -34,9 +35,11 @@ body {
 }
 
 .menu li {
-    width: 100px;
+    width: 98px;
     height: 40px;
     margin-right: 44px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
     float: left;
     list-style: none;
 }
@@ -52,16 +55,20 @@ body {
     text-shadow: .5px .866px 1px rgb(0, 0, 0);
 }
 
+.menu li:hover {
+    border-color: #838383;
+    background-image: -moz-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
+}
+
 .menu .active {
-    border-right: 1px solid #838383;
-    border-left: 1px solid #838383;
+    border-color: #838383;
     background-image: -moz-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(74, 74, 74) 100%);
 }
 
 .menu-left {
     width: 238px;
-    height: 238px;
     margin-left: 46px;
     float: left;
     font-size: 13.333px;
@@ -98,22 +105,21 @@ body {
 }
 
 .content {
+    width: 774px;
     float: right;
 }
 
 .content img {
-    width: 498px;
-    margin: 0 48px 39px;
+    margin: 0 46px 39px 50px;
     padding: 46px 88px;
     border: 1px solid #c8c8c8;
 }
 
 .content p {
     display: block;
-    width: 635px;
-    height: 141px;
     margin-bottom: 59px;
     margin-left: 72px;
+    padding-right: 60px;
     color: #2c2c2c;
     font-size: 13.333px;
     line-height: 1.6;
@@ -123,6 +129,7 @@ footer {
     width: 966px;
     height: 40px;
     margin: auto;
+    margin-bottom: 59px;
     clear: both;
     background-color: #e1e1e1;
     font-size: 13.333px;
@@ -151,6 +158,10 @@ footer .links {
     color: #2c2c2c;
     line-height: 40px;
     text-align: center;
+}
+
+.links li:hover a {
+    text-decoration: underline;
 }
 
 .links li .active {
