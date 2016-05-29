@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin_1-webfont.eot');
+    src: url('../fonts/helveticaneue-thin_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin_1-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    display: table-row;
+    width: 100%;
+    background-color: #085392;
+}
+
+.menu {
+    display: block;
+    float: right;
+    list-style: none;
+}
+
+.menu li {
+    height: 36px;
+    position: relative;
+    padding: 0 16px;
+    float: left;
+    font: 14px 'Helvetica Neue';
+}
+
+.menu li a {
+    display: inline-block;
+    color: #60b5ed;
+    text-decoration: none;
+    line-height:36px;
+}
+
+.menu li:hover {
+    background-color: #4eabda;
+}
+
+.menu li:hover a {
+    color: #fff;
+}
+
+.offers {
+    border-left: 1px solid #4299d2;
+}
+
+.offers img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.offers p {
+    display: inline-block;
+    color: #fff;
+}
+
+.menu li:last-child {
+    margin-right: 20px;
+    border-left: 1px solid #4299d2;
+    border-right: 1px solid #4299d2;
+    color: #fff;
+    background-color: #4299d2;
+}
+
+.menu li:last-child a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.content {
+    display: table-row;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../img/background.png');
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-size: 100% 100%;
+}
+
+.registration {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.registration_header {
+    margin-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+}
+
+.registration_header p {
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 24px;
+}
+
+.registration_body {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.registration_body > a {
+    display: inline-block;
+}
+
+.registration_body > a > img {
+    padding: 36px 0 10px 0;
+}
+
+.divider img {
+    padding: 10px 0;
+}
+
+form div {
+    display: block;
+    padding: 7px 0;
+}
+
+.fields {
+    width: 274px;
+    margin: auto;
+}
+
+input {
+    display: block;
+    width: 256px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    border: none;
+    border-bottom: 1px solid #484848;
+    background-color: #000;
+    font-family: 'Helvetica Neue';
+}
+
+input[type="text"] {
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 149px;
+    margin: auto;
+    padding: 10px;
+    background-image: url('../img/submit_button.png');
+    border: 0;
+    border-radius: 5%;
+    font-size: 14px;
+    color: #fff;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox label {
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+    line-height: 14px;
+    text-align: left;
+}
+
+input[type="text"]:focus {
+    background-color: #1b5288;
+    color: #fff;
+    box-shadow: 0 3px 9px #2f7bc5;
+}
+
+.terms_of_service p {
+    width: 310px;
+    font-size: 11px;
+    font-family: 'Helvetica Neue';
+    margin: auto;
+    padding: 10px 0;
+    display: block;
+}

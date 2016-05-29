@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+table {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-style: hidden;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+td {
+    border: 10px solid #1b2925;
+}
+
+table tr:first-child {
+    height: 52px;
+}
+
+table tr:nth-child(2),
+table tr:nth-child(3) {
+    height: 140px;
+}
+
+table tr:nth-child(4) {
+    height: 70px;
+}
+
+table tr:nth-child(5) {
+    height: 67px;
+}
+
+table tr:nth-child(6) {
+    height: 37px;
+}
+
+table tr:nth-child(7) {
+    height: 35px;
+}
+
+table tr:nth-child(2) > td:first-child {
+    width: 50px;
+}
+
+table tr:nth-child(3) > td:nth-child(2) {
+    width: 77px;
+}
+
+table tr:nth-child(3) > td:nth-child(3) {
+    width: 75px;
+}
+
+table tr:nth-child(4) > td:first-child,
+table tr:nth-child(4) > td:nth-child(2) {
+    width: 60px;
+}
+
+table tr:nth-child(4) > td:nth-child(3) {
+    width: 130px;
+}
+
+.red {
+    background-color: #ff6237;
+}
+
+.yellow {
+    background-color: #ffee60;
+}
+
+.black {
+    background-color: #1f2b24;
+}
+
+.blue {
+    background-color: #084481;
+}
