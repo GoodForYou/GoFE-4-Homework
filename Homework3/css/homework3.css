@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100%;
     background-color: #f9f9f9;
     font-family: 'Open sans';
     font-size: 13.33px;
@@ -35,9 +36,8 @@ body {
 }
 
 .menu li {
-    width: 98px;
+    width: 142px;
     height: 40px;
-    margin-right: 44px;
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
     float: left;
@@ -144,9 +144,8 @@ footer .links {
 }
 
 .links li {
-    width: 100px;
+    width: 144px;
     height: 40px;
-    margin-right: 44px;
     float: left;
     list-style: none;
 }
