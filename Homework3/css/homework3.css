@@ -46,12 +46,12 @@ body {
 
 .menu li a {
     display: inline-block;
-    width: 98px;
+    width: 122px;
     height: 40px;
     color: #fff;
     font-size: 14.67px;
     line-height: 40px;
-    text-align: center;
+    padding-left: 20px;
     text-shadow: .5px .866px 1px rgb(0, 0, 0);
 }
 
