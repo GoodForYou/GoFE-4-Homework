@@ -3,8 +3,12 @@
     padding: 0;
 }
 
-body {
+html {
     height: 100%;
+}
+
+body {
+    min-height: 100%;
     background-color: #f9f9f9;
     font-family: 'Open sans';
     font-size: 13.33px;
@@ -33,14 +37,14 @@ body {
     background-color: rgba(0, 0, 0, .5);
     background-image: -moz-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
+    font-size: 0;
 }
 
 .menu li {
-    width: 142px;
-    height: 40px;
+    display: inline-block;
+    height: 100%;
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
-    float: left;
     list-style: none;
 }
 
