@@ -167,7 +167,11 @@ body {
     display: block;
 }
 
-.content {
+.submenu > li:hover > a {
+    text-decoration: underline;
+}
+
+.container {
     overflow: hidden;
 }
 
@@ -195,6 +199,14 @@ body {
     font-weight: bold;
     line-height: 30px;
     text-align: center;
+}
+
+.content {
+    width: 580px;
+    height: 100%;
+    padding-bottom: 100000px;
+    margin-bottom: -100000px;
+    float: left;
 }
 
 .news {
