@@ -26,15 +26,18 @@
     background-color: #085392;
 }
 
-.menu {
-    display: block;
+.header_navbar {
     float: right;
+}
+
+.menu {
     list-style: none;
+    float: left;
+    overflow: hidden;
 }
 
 .menu li {
     height: 36px;
-    position: relative;
     padding: 0 16px;
     float: left;
     font: 14px 'Helvetica Neue';
@@ -44,7 +47,7 @@
     display: inline-block;
     color: #60b5ed;
     text-decoration: none;
-    line-height:36px;
+    line-height: 36px;
 }
 
 .menu li:hover {
@@ -56,28 +59,57 @@
 }
 
 .offers {
+    display: table;
+    height: 36px;
+    float: left;
     border-left: 1px solid #4299d2;
+}
+
+.offers:hover {
+    background-color: #4eabda;
+}
+
+.offers a {
+    display: table-cell;
+    height: 36px;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 .offers img {
     display: inline-block;
+    padding-left: 16px;
+    height: auto;
     vertical-align: middle;
 }
 
-.offers p {
-    display: inline-block;
+.offers > a > p {
+    display: inline;
+    padding-right: 16px;
     color: #fff;
+    font: 14px 'Helvetica Neue';
+    text-decoration: none;
+    line-height: 36px;
 }
 
-.menu li:last-child {
+.login {
     margin-right: 20px;
+    padding: 0 16px;
     border-left: 1px solid #4299d2;
     border-right: 1px solid #4299d2;
+    float: left;
     color: #fff;
     background-color: #4299d2;
+    font: 14px 'Helvetica Neue';
+    line-height: 36px;
 }
 
-.menu li:last-child a{
+.login p,
+.login a {
+    display: inline;
+}
+
+.login a {
     text-decoration: underline;
     color: #fff;
 }
@@ -87,21 +119,22 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url('../img/background.png');
+    background-image: url('../img/background.jpg');
     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     background-size: 100% 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% auto;
+}
+
+.content > div {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .registration {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 45%;
+    width: 558px;
+    margin: auto;
     text-align: center;
     color: #fff;
 }
@@ -132,8 +165,38 @@
     padding: 36px 0 10px 0;
 }
 
-.divider img {
+.divider {
     padding: 10px 0;
+}
+
+.divider p {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    font-family: 'Helvetica Neue';
+    color: #999999;
+}
+
+.divider p::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 123px;
+    top: 8px;
+    left: -128px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+}
+
+.divider p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 123px;
+    top: 8px;
+    left: 23px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
 }
 
 form div {
@@ -156,7 +219,7 @@ input {
     border-bottom: 1px solid #484848;
     background-color: #000;
     font-family: 'Helvetica Neue';
-    color: #fff;  
+    color: #fff;
 }
 
 input[type="text"] {
@@ -170,6 +233,7 @@ input[type="submit"] {
     background-image: url('../img/submit_button.png');
     border: 0;
     border-radius: 5%;
+    cursor: pointer;
     font-size: 14px;
     color: #fff;
 }
@@ -184,16 +248,21 @@ input[type="checkbox"] {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .checkbox label {
+    display: inline-block;
+    margin-left: -30px;
     font-size: 14px;
     font-family: 'Helvetica Neue';
     line-height: 14px;
-    text-align: left;
+    cursor: pointer;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
     background-color: #1b5288;
     color: #fff;
     box-shadow: 0 3px 9px #2f7bc5;

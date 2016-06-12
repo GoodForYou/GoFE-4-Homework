@@ -8,45 +8,49 @@
   <body>
     <div class="wrapper">
       <div class="header">
-        <ul class="menu">
+        <div class="header_navbar">
+          <ul class="menu">
           <li><a href="#">Meu YouBike</a></li>
           <li class="sale"><a href="#">Vender</a></li>
           <li><a href="#">Forum</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Ajuda</a></li>
-          <li class="offers">
+        </ul>
+        <div class="offers">
             <a href="#">
               <img src="img/inventicon.png" alt="Флажок"/>
               <p>Minhas Ofertas</p>
             </a>
-          </li>
-          <li>Ola!&nbsp;<a href="#">Entrar</a>&nbsp;ou&nbsp;<a href="#">Cadastre-se</a></li>
-        </ul>
+        </div>
+        <div class="login"><p>Ola!&nbsp</p><a href="#">Entrar</a><p>&nbspou&nbsp</p><a href="#">Cadastre-se</a></div>
+      </div>
       </div>
       <div class="content">
-        <div class="registration">
-          <div class="registration_header"><p>Cadastre-se</p></div>
-          <div class="registration_body">
-            <a href="https://www.facebook.com/"><img src="img/facebook_button.png" alt="Фейсбук-кнопка" /></a>
-            <div class="divider"><img src="img/divider.png" alt="Разделитель"/></div>
-            <form action="/">
-              <div class="fields">
-                <div><input type="text" name="first_name" value="" placeholder="First Name" required></div>
-                <div><input type="text" name="last_name" value="" placeholder="Last Name" required></div>
-                <div><input type="text" name="email" value="" placeholder="Email Address" required></div>
-                <div><input type="password" name="password" placeholder="Choose Password" required></div>
-                <div><input type="password" name="password" placeholder="Password Confirm" required></div>
-                <div class="checkbox">
-                  <input type="checkbox" id="youbike_automessage">
-                  <label for="youbike_automessage">Send me YouBike updates and tips</label>
+        <div class="">
+          <div class="registration">
+            <div class="registration_header"><p>Cadastre-se</p></div>
+            <div class="registration_body">
+              <a href="https://www.facebook.com/"><img src="img/facebook_button.png" alt="Фейсбук-кнопка" /></a>
+              <div class="divider"><p>OU</p></div>
+              <form action="/">
+                <div class="fields">
+                  <div><input type="text" name="first_name" value="" placeholder="First Name" required></div>
+                  <div><input type="text" name="last_name" value="" placeholder="Last Name" required></div>
+                  <div><input type="text" name="email" value="" placeholder="Email Address" required></div>
+                  <div><input type="password" name="password" placeholder="Choose Password" required></div>
+                  <div><input type="password" name="password" placeholder="Password Confirm" required></div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="youbike_automessage">
+                    <label for="youbike_automessage">Send me YouBike updates and tips</label>
+                  </div>
                 </div>
+                <div><input type="submit" value="Create my Account"></div>
+              </form>
+              <div class="terms_of_service">
+                <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy</p>
               </div>
-              <div><input type="submit" value="Create my Account"></div>
-            </form>
-            <div class="terms_of_service">
-              <p>By clicking the button above, you agree to the Terms of Service Xiew our Privacy Policy</p>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
