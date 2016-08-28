@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Lucida Sans Unicode';
+    src: url('../fonts/lucida_sans_unicode.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 1000px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.wrapper {
+    width: 912px;
+    margin: auto;
+}
+
+.support {
+    margin-bottom: 17px;
+}
+
+.top {
+    margin-left: 1px;
+    margin-bottom: 10px;
+}
+
+.top * {
+    display: inline-block;
+}
+
+.contacts img {
+    display: inline-block;
+    margin-left: 7px;
+    vertical-align: bottom;
+}
+
+.contacts p {
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: Arial;
+    font-size: 18px;
+    color: #5e696d;
+    letter-spacing: 0.025em;
+}
+
+.contacts p:nth-child(2) {
+    margin-left: -2px;
+}
+
+.authorization {
+    margin-left: 10px;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+    height: 25px;
+}
+
+.authorization * {
+    vertical-align: middle;
+}
+
+.authorization img {
+    margin-left: 8px;
+    margin-right: -2px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 108px;
+    height: 12px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    border-width: 1px;
+    border-color: rgb( 155, 161, 163 );
+    background-color: rgb( 255, 255, 255 );
+    margin: auto;
+    font-size: 10.91px;
+}
+
+input[type="text"] {
+    padding-left: 5px;
+    letter-spacing: 0.15px;
+}
+
+input[type="password"] {
+    padding-left: 6px;
+    letter-spacing: 0.3px;
+}
+
+input[type="submit"] {
+    display: inline;
+    margin-left: -3px;
+    margin-bottom: 1px;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12px;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.authorization a {
+    color: #fff;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: -0.8px;
+    margin-left: -6px;
+    margin-bottom: 2px;
+}
+
+.authorization > a:last-child {
+    margin-left: 16px;
+    margin-right: 9px;
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+    display: inline-block;
+    height: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #bfbfbf;
+    letter-spacing: 0.05px;
+}
+
+nav {
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-top: -1px;
+    margin-left: 12px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+nav > a {
+    display: inline-block;
+    margin-right: 4px;
+    height: 20px;
+}
+
+nav a:first-child {
+    margin-left: 8px;
+}
+
+nav a:last-child {
+    margin-right: 10px;
+}
+
+nav > a > img {
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+nav > a:nth-child(2) > img {
+    margin-left: -1px;
+}
+
+.menu_line {
+  position: relative;
+  height: 34px;
+  background-image: -moz-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+  margin-top: -1px;
+  border-radius: 5px;
+}
+
+.menu_line * {
+    display: inline-block;
+}
+
+.menu {
+    margin-left: 125px;
+    margin-right:77px;
+}
+
+.menu li {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 20px;
+}
+
+.menu li:first-child {
+    padding-right: 11.5px;
+    padding-left: 11.5px;
+    margin-left: 6.5px;
+}
+
+.menu li:nth-child(2) {
+    padding-right: 9px;
+    padding-left: 11.5px;
+}
+
+.menu li:nth-child(3) {
+    padding-right: 9.5px;
+    padding-left: 9px;
+}
+
+.menu li:nth-child(4) {
+    padding-right: 7px;
+    padding-left: 9.5px;
+}
+
+.menu li:nth-child(5) {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 7px;
+}
+
+.menu li:hover {
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+}
+
+.menu li:hover > a {
+    color: #fff;
+}
+
+.menu li a {
+    -moz-transform: matrix( 0.90909090909091, 0, 0, 0.909375, 0, 0);
+    -webkit-transform: matrix( 0.90909090909091, 0, 0, 0.909375, 0, 0);
+    color: #b1bcc0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.busket {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 712px;
+}
+
+.busket span:nth-child(1) {
+    color: #929b9f;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    margin-right: -2px;
+}
+
+.menu_line img {
+    position: absolute;
+    top: 8px;
+    left: 684px;
+}
+
+.busket span:nth-child(3) {
+    color: #8a9296;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 7px;
+}
+
+.busket p {
+    color: #0d5a8f;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.busket p:nth-child(2) {
+    margin-right: 9px;
+}
+
+.busket p:nth-child(4) {
+    letter-spacing: 0.25px;
+}
+
+main > img {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.catalogue {
+    float: left;
+}
+
+.brands {
+    float: right;
+}
+
+aside {
+    display: inline-block;
+    width: 192px;
+}
+
+aside > ul > lh {
+    display: inline-block;
+    height: 26px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 12.73px;
+    font-family: 'Lucida Sans Unicode';
+    margin-bottom: 13px;
+}
+
+aside ul lh img {
+    display: inline-block;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+aside ul lh p {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 1px;
+    margin-right: 6px;
+}
+
+aside > ul {
+    list-style: none;
+}
+
+aside ul li ul lh {
+    height: 26px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-left: 2px;
+    display: block;
+    width: 148px;
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+aside ul li ul lh img {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: -4px;
+}
+
+aside ul li ul lh p {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+aside ul li ul {
+    margin-bottom: -5.6px;
+}
+
+aside ul li ul li {
+    position: relative;
+    width: 116px;
+    height: 15px;
+    font-size: 12.73px;
+    font-family: 'Lucida Sans Unicode';
+    margin-left: 47px;
+    margin-bottom: 10.5px;
+    list-style: none;
+}
+
+aside ul li ul li:before {
+    content: url('../img/list_style_icon.png');
+    position: absolute;
+    top: -1px;
+    left: -10px;
+}
+
+aside ul li ul li a {
+    text-decoration: none;
+    color: #465961;
+}
+
+.catalogue ul li ul li:hover {
+    border-bottom: 2px solid #465961;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 47.5px;
+    letter-spacing: 0.66px;
+}
+
+.catalogue ul li ul li:hover > a {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.search_result {
+    width: 525px;
+    margin-top: -1px;
+    float: left;
+    background-color: #a7b6bd;
+}
+
+figure {
+    width: 137px;
+    height: 100%;
+    margin-left: 23px;
+    margin-right: 8px;
+    float: left;
+    text-align: center;
+}
+
+figure > figcaption:first-child {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 14.59px;
+    color: #206988;
+    margin-top: 9px;
+    margin-bottom: -9px;
+    letter-spacing: 0.5px;
+}
+
+figure > figcaption:nth-child(2) {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 12.77px;
+    color: #1f2528;
+    margin-bottom: -2px;
+}
+
+figure > .tyres_image {
+    width: 137px;
+    height: 127px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.tyres_image img {
+    margin-top: 5px;
+    margin-left: -3px;
+}
+
+figure > figcaption:last-child {
+    margin-top: 2px;
+    margin-bottom: 12px;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color: #114165;
+}
+
+figure > figcaption:last-child > span {
+    font-size: 12px;
+    margin-left: 1px;
+}
+
+.search_result_line {
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.search_result_line:first-child {
+    margin-top: 1px;
+    margin-bottom: -10px;
+}
+
+.search_result_line:nth-child(2) {
+    margin-bottom: -7px;
+}
+
+.search_result_line:last-child {
+    margin-bottom: 6px;
+}
+
+.search_result_line:nth-child(2) figure:nth-child(2) {
+    margin-top: -1px;
+}
+
+.search_result_line:nth-child(3) figure:first-child > figcaption:first-child {
+    margin-top: 8px;
+}
+
+.search_result_line:nth-child(3) figure:first-child > figcaption:last-child {
+    margin-top: 3px;
+}
+
+.search_result_line figure:first-child > figcaption:nth-child(2) {
+    margin-left: 4px;
+}
+
+.search_result_line figure:first-child > figcaption:last-child {
+    margin-left: 9px;
+    letter-spacing: 0.2px;
+}
+
+.search_result_line figure:nth-child(2) > figcaption:first-child {
+    margin-left: 4px;
+}
+
+.search_result_line figure:nth-child(2) > figcaption:nth-child(2) {
+    margin-left: 2px;
+}
+
+.search_result_line figure:nth-child(2) > .tyres_image {
+    margin-bottom: 3px;
+}
+
+.search_result_line figure:nth-child(2) > figcaption:last-child {
+    margin-left: 10px;
+    letter-spacing: 0.4px;
+}
+
+.search_result_line figure:last-child > figcaption:first-child {
+    margin-left: 4px;
+}
+
+.search_result_line figure:last-child > figcaption:last-child {
+    margin-left: 11px;
+    letter-spacing: 0.4px;
+}
+
+.brands {
+  width: 185px;
+}
+
+.brands header {
+  display: inline-block;
+  height: 25px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  font-size: 12.73px;
+  font-family: 'Lucida Sans Unicode';
+  margin-bottom: 13px;
+  margin-top: -1px;
+}
+
+.brands header img {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: -7px;
+}
+
+.brands header p {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 1px;
+    margin-right: 90px;
+    margin-left: 1px;
+}
+
+.brands .tyre_brand_header,
+.brands .disc_brand_header {
+    height: 26px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: block;
+    width: 148px;
+    list-style: none;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    width: 135px;
+}
+
+.brands .disc_brand_header {
+    margin-top: 16px;
+    margin-left: 14px;
+    margin-bottom: 7px;
+}
+
+.brands .tyre_brand_header img,
+.brands .disc_brand_header img {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: -4px;
+}
+
+.brands .disc_brand_header img {
+    margin-left: 3px;
+    margin-right: -3px;
+}
+
+.brands .tyre_brand_header p,
+.brands .disc_brand_header p {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 2px
+}
+
+.brands label {
+  display: block;
+  position: relative;
+  width: 116px;
+  height: 15px;
+  font-size: 12.73px;
+  font-family: 'Lucida Sans Unicode';
+  margin-left: 25px;
+  margin-bottom: 10px;
+  color: #465961;
+}
+
+input[type="checkbox"] {
+    -ms-transform: scale(0.6); /* IE */
+    -moz-transform: scale(0.6); /* FF */
+    -webkit-transform: scale(0.6); /* Safari and Chrome */
+    -o-transform: scale(0.6);
+    margin-right: 7px;
+    opacity: 0.5;
+}
+
+.brands label:before {
+    content: url('../img/list_style_icon2.png');
+    position: absolute;
+    top: 1px;
+}
+
+.brands input[type="submit"] {
+    width: 82px;
+    margin-top: 12px;
+    margin-left: 24px;
+    border-radius: 12px;
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-family: Arial;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+.tyres_logos {
+    display: block;
+    clear: both;
+    padding-top: 37px;
+    padding-bottom: 27px;
+    margin-left: 118px;
+}
+
+.tyres_logos img {
+    vertical-align: middle;
+    padding-right: 7px;
+    filter: grayscale(100%);
+    opacity: 0.3;
+}
+
+.tyres_logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.tyres_logos img:first-child {
+    margin-top: 3px;
+}
+
+.tyres_logos img:nth-child(2) {
+    margin-top: -3px;
+}
+
+.tyres_logos img:nth-child(3) {
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+.tyres_logos img:nth-child(4) {
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.tyres_logos img:nth-child(5) {
+    margin-top: -2px;
+}
+
+.tyres_logos img:nth-child(6) {
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.tyres_logos img:nth-child(7) {
+    margin-top: -2px;
+    margin-left: 1px;
+}
+
+.tyres_logos img:nth-child(8) {
+    margin-top: -2px;
+    margin-left: 3px;
+}
+
+footer {
+    background-color: #213a4d;
+    width: 910px;
+    height: 108px;
+    margin-top: -2px;
+    margin-left: 1px;
+}
+
+.menu_bottom {
+    display: block;
+    text-align: center;
+    height: 12px;
+    padding-top: 12px;
+}
+
+.menu_bottom li {
+    display: inline-block;
+    list-style: none;
+    height: 12px;
+    border-right: 2px solid #7a878f;
+}
+
+.menu_bottom li a {
+    display: inline-block;
+    height: 11px;
+    margin-top: -19px;
+    text-decoration: none;
+    color: #bec6c9;
+    font-family: Arial;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.menu_bottom li:first-child {
+    padding-right: 11px;
+    padding-left: 4px;
+}
+
+.menu_bottom li:nth-child(2) {
+    padding-left: 7px;
+    padding-right: 11px;
+    letter-spacing: 0.3px;
+}
+
+.menu_bottom li:nth-child(3) {
+    padding-left: 6px;
+    padding-right: 11px;
+    letter-spacing: 0.3px;
+}
+
+.menu_bottom li:last-child {
+    padding-left: 10px;
+    border-right: none;
+}
+
+.menu_bottom li:hover > a {
+    color: #52abcb;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    display: inline-block;
+    margin-top: 13px;
+    margin-left: -1px;
+    color: #7f4740;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -0.15px;
+}
