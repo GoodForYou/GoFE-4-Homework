@@ -1,0 +1,783 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('../fonts/leaguegothic-condensedregular.otf');
+     /*src: url('../fonts/leaguegothic-condenseditalic.otf');*/
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensans-light.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/opensans-extrabold.ttf');
+}
+
+@media (min-width: 320px) {
+    header {
+        height: 516px;
+    }
+
+    .menu {
+        margin-top: 11px;
+    }
+
+    .menu__item {
+        display: none;
+    }
+
+    .menu__item:first-child {
+        display: block;
+    }
+
+    .slider {
+        margin-top: 117px;
+    }
+
+    .slider__article,
+    .slider__images {
+        display: none;
+    }
+
+    /*section {
+        width: 320px;
+    }*/
+
+    .info__empty {
+        height: 68px;
+    }
+
+    .info__block:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .info__block:nth-child(3) {
+        margin-bottom: 36px;
+    }
+
+    .info__block:nth-child(4) {
+        padding-bottom: 63px;
+    }
+
+    .info__block {
+        padding-left: 82px;
+        padding-right: 18px;
+    }
+
+    .info__primary {
+        width: 100%;
+        letter-spacing: -0.35px;
+        line-height: 24px;
+    }
+
+    .info__secondary {
+        display: none;
+    }
+
+    .info__else {
+        display: none;
+    }
+
+     .info__more {
+        margin-top: 13px;
+        margin-right: 8px;
+        float: right;
+    }
+
+    .opinion {
+        margin-left: 43px;
+        margin-right: 20px;
+        padding-top: 24px;
+    }
+
+    .opinion__title {
+        margin-left: 36px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .opinion__title:first-child::before {
+        left: -59px;
+        top: -7px;
+    }
+
+    .opinion__secondary {
+        display: none;
+    }
+
+    .opinion__primary,
+    .opinion__secondary {
+        margin-top: 3px;
+        margin-left: 39px;
+        padding-right: 43px;
+        line-height: 24px;
+    }
+
+    .slider__number {
+        margin-top: 51px;
+        margin-left: 43px;
+    }
+
+    aside {
+        width: 320px;
+        margin-top: 37px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sidebar__name {
+        margin-left: 19px;
+        margin-bottom: 12px;
+    }
+
+    .post1 {
+        margin-bottom: 18px;
+    }
+
+    .post2 {
+        margin-bottom: 24px;
+    }
+
+    .post__image {
+      margin-left: 20px;
+    }
+
+    .post__name__secondary,
+    .post__date__secondary,
+    .post__date__else {
+        display: none;
+    }
+
+    .post__more {
+      margin-top: 14px;
+      margin-right: 25px;
+    }
+
+    .sponsors {
+        width: 237px;
+    }
+
+    .sponsors__img:first-child {
+        padding-top: 51px;
+        padding-right: 25px;
+    }
+
+    .sponsors__img:nth-child(2) {
+        padding-top: 51px;
+        padding-left: 26px;
+    }
+
+    .sponsors__img:nth-child(3) {
+        padding-top: 57px;
+        padding-right: 30px;
+    }
+
+    .sponsors__img:nth-child(4) {
+        padding-top: 57px;
+        padding-left: 31px;
+    }
+
+    .sponsors__img:nth-child(5) {
+        padding-top: 38px;
+        padding-right: 26px;
+        padding-bottom: 72px;
+    }
+
+    .sponsors__img:nth-child(6) {
+        padding-top: 38px;
+        padding-left: 26px;
+        padding-bottom: 72px;
+    }
+
+    .footer__other {
+        height: 200px;
+    }
+
+    .footer__info,
+    .menu__footer {
+        display: none;
+    }
+
+    .design {
+        display: inline-block;
+        width: 100%;
+        margin-top: 36px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) {
+    header {
+        position: relative;
+        padding-bottom: 32px;
+      }
+
+    .menu {
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 246px;
+        border-radius: 9px;
+        background: rgba(54, 41, 62, 0.7);
+    }
+
+    .menu__item {
+        display: block;
+    }
+
+    .menu__item:first-child {
+        padding-bottom: 4px;
+    }
+
+    .menu__item:nth-child(2) {
+        padding-top: 6px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #edbfff;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .menu__item:nth-child(3) {
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+
+    .menu__item:nth-child(5) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu__item:nth-child(6) {
+        padding-bottom: 7px;
+    }
+
+    .slider {
+        width: 480px;
+        margin: auto;
+        margin-top: 73px;
+        overflow: hidden;
+    }
+
+    .slider__text {
+        display: inline-block;
+        margin-top: 98px;
+        margin-left: 28px;
+        float: left;
+    }
+
+    .slider__images {
+        display: inline-block;
+        margin-right: 31px;
+        float: right;
+    }
+
+    section {
+        width: 480px;
+    }
+
+    .info__empty {
+        height: 75px;
+    }
+
+    .info__block {
+      margin-left: 1px;
+    }
+
+    .info__block:nth-child(3) {
+        margin-bottom: 24px;
+    }
+
+    .info__block:nth-child(4) {
+        padding-bottom: 69px;
+    }
+
+    .info__title {
+      letter-spacing: -0.05px;
+    }
+
+    .info__primary {
+        width: 365px;
+    }
+
+    .info__secondary {
+        display: inline;
+        margin-left: 1px;
+    }
+
+    .info__else {
+        display: inline;
+        margin-left: 3px;
+        letter-spacing: -0.5px;
+    }
+
+    .info__more {
+       margin-left: 0;
+       margin-right: 8px;
+   }
+
+   .opinion__block {
+       padding-top: 71px;
+   }
+
+   .opinion {
+       text-align: left;
+       padding-top: 28px;
+       padding-bottom: 34px;
+   }
+
+   .opinion__title {
+       display: inline;
+       margin-left: 39px;
+       font-size: 30px;
+       text-align: left;
+   }
+
+   .opinion__title:first-child::before {
+       left: -62px;
+       top: -5px;
+   }
+
+   .opinion__title:nth-child(2) {
+       margin-left: 1px;
+   }
+
+   .opinion__primary {
+       margin-top: 14px;
+       padding-right: 31px;
+   }
+
+   .opinion__secondary {
+       display: inline;
+       margin-left: 0px;
+       padding-right: 0px;
+   }
+
+   .slider__number {
+     margin-top: 22px;
+     margin-left: 13px;
+   }
+
+   aside {
+       width: 480px;
+       margin-top: 38px;
+   }
+
+   .sidebar__name {
+       margin-left: 83px;
+       margin-bottom: 12px;
+   }
+
+   .post__image {
+       margin-left: 84px;
+   }
+
+   .post1,
+   .post2,
+   .post3 {
+       margin-right: 73px;
+   }
+
+   .post1 {
+       margin-bottom: 21px;
+   }
+
+   .post2 {
+       margin-bottom: 19px;
+   }
+
+   .post__name__secondary,
+   .post__date__secondary {
+       display: inline;
+   }
+
+   .post__date__secondary {
+     letter-spacing: -0.7px;
+   }
+
+   .post__more {
+     margin-top: 16px;
+     margin-right: 59px;
+   }
+
+   .sponsors {
+       width: 345px;
+       padding-bottom: 36px;
+   }
+
+   .sponsors__img:first-child {
+       padding-top: 38px;
+       padding-right: 51px;
+       padding-left: 1px;
+   }
+
+   .sponsors__img:nth-child(2) {
+       padding-top: 38px;
+       padding-right: 50px;
+       padding-left: 0;
+   }
+
+   .sponsors__img:nth-child(3) {
+       padding-top: 38px;
+       padding-right: 0;
+   }
+
+   .sponsors__img:nth-child(4) {
+       padding-top: 22px;
+       padding-right: 55px;
+       padding-left: 0px;
+   }
+
+   .sponsors__img:nth-child(5) {
+       padding-top: 22px;
+       padding-right: 30px;
+       padding-bottom: 0px;
+   }
+
+   .sponsors__img:nth-child(6) {
+       padding-top: 22px;
+       padding-left: 21px;
+       padding-bottom: 0px;
+   }
+
+   .footer__info,
+   .menu__footer {
+       display: block;
+   }
+
+   .footer__info {
+       padding-top: 77px;
+   }
+
+   .footer__info .footer__block  {
+       padding-left: 18px;
+       margin-left: 0;
+   }
+
+   .footer__block:first-child {
+       padding-bottom: 54px;
+   }
+
+   .footer__block:nth-child(2) {
+       padding-bottom: 37px;
+   }
+
+   .footer__block .info__title {
+       margin-bottom: 5px;
+   }
+
+   .footer__block .info__primary {
+       width: 441px;
+   }
+
+   .footer__block .info__secondary {
+       display: none;
+   }
+
+   .menu__footer {
+       position: static;
+       width: 100%;
+       background: none;
+       margin-top: 88px;
+       padding-top: 32px;
+
+   }
+
+   .menu__footer .menu__item {
+       display: inline-block;
+       margin: 0;
+       margin-right: 20px;
+       padding: 0;
+   }
+
+   .menu__footer .menu__item:nth-child(2) {
+       border: none;
+       background: none;
+   }
+
+   .menu__footer .menu__item:last-child {
+       margin-right: 0;
+   }
+
+   .menu__footer .menu__link {
+       font-size: 20px;
+       letter-spacing: 0.1px;
+   }
+
+   .design {
+       margin-top: 26px;
+   }
+
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    background-image: url(../img/background_top.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.logo {
+    padding-top: 59px;
+    text-align: center;
+}
+
+.logo__line {
+    display: inline-block;
+    font-size: 49px;
+    font-family: 'League Gothic';
+    letter-spacing: -0.7px;
+}
+
+.logo__line:first-child {
+    color: #fff;
+    margin-left: -1px;
+}
+
+.logo__line:nth-child(2) {
+    margin-left: -4px;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+}
+
+.menu__item:hover > .menu__link {
+    border-color: #edbfff;
+}
+
+.menu__item:first-child {
+    padding-top: 11px;
+}
+
+.menu__link {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    font-family: 'League Gothic';
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider {
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+
+.slider__name {
+    margin-left: -9px;
+    color: #fefefe;
+    font-family: 'League Gothic';
+    font-size: 36px;
+}
+
+.slider__motto {
+    margin-top: -4px;
+    margin-left: 11px;
+    color: #edbfff;
+    font-family: 'League Gothic';
+    font-size: 18px;
+    letter-spacing: 0.05px;
+}
+
+section {
+    margin: auto;
+}
+
+.info {
+    background: -webkit-linear-gradient(top, #745183, #36293d);
+    background: -moz-linear-gradient(top, #745183, #36293d);
+    background: -ms-linear-gradient(top, #745183, #36293d);
+    background: -o-linear-gradient(top, #745183, #36293d);
+}
+
+.info__block {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.info__title {
+    margin-bottom: -1px;
+    font-family: 'League Gothic';
+    font-size: 24px;
+    text-align: left;
+}
+
+.info__icon {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 31px;
+    left: 31px;
+    top: 4px;
+    background: url('../img/info_sprite.png');
+}
+
+.info__more {
+    display: inline-block;
+    font-family: 'League Gothic';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.info__primary,
+.info__secondary {
+    font-family: 'Open Sans';
+    text-align: left;
+}
+
+.info__primary {
+    -moz-hyphens: auto;
+}
+
+.main {
+    background-color: #f9f9f9;
+}
+
+.opinion__block {
+    /*padding-left: 43px;*/
+    padding-top: 72px;
+    text-align: center;
+}
+
+.opinion {
+    display: block;
+    /*width: 256px;*/
+    background-color: #fff;
+}
+
+.opinion__title {
+  position: relative;
+  font-family: 'League Gothic';
+  text-align: left;
+}
+
+.opinion__title:first-child::before {
+    content: url('../img/testimonial.png');
+    position: absolute;
+}
+
+.opinion__title:nth-child(2) {
+    color: #edbfff;
+}
+
+.opinion__primary,
+.opinion__secondary {
+    font-family: 'Open Sans';
+    text-align: left;
+    letter-spacing: -0.36px;
+}
+
+.opinion__primary {
+    -moz-hyphens: auto;
+}
+
+aside {
+    margin-bottom: 126px;
+    text-align: left;
+}
+
+.sidebar__name {
+    font-family: 'League Gothic';
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: -0.05px;
+}
+
+figure {
+    clear: both;
+    margin: auto;
+    overflow: hidden;
+}
+
+.post__image {
+    float: left;
+}
+
+figcaption {
+    float: right;
+    margin-right: 21px;
+}
+
+.post__name__primary {
+    display: block;
+    font-family: 'Open Sans Extrabold';
+}
+
+.post__date__primary {
+    display: block;
+    margin-top: 1px;
+    font-family: 'Open Sans Light';
+    font-size: 16px;
+    letter-spacing: -0.1px;
+}
+
+.post__more {
+    display: block;
+    float: right;
+    font-family: 'League Gothic';
+    font-size: 19px;
+    color: #454545;
+    text-decoration: none;
+    letter-spacing: -0.25px;
+}
+
+.sponsors {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsors__img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer__other {
+    background-image: url(../img/background_bottom.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.footer__block {
+    color: #000;
+}
+
+.design__line {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+
+.design__line:first-child {
+    font-family: 'Open Sans Light';
+}
+
+.design__line:nth-child(2) {
+    font-family: 'Open Sans Extrabold';
+    margin-left: -1px;
+}
