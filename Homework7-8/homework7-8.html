@@ -8,39 +8,40 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <p class="logo__line">PINGBULL</p>
-        <p class="logo__line">ER</p>
+      <div class="header__top">
+        <div class="logo">
+          <p class="logo__line">PINGBULL</p>
+          <p class="logo__line">ER</p>
+        </div>
+        <menu class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">HOME</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">ABOUT</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">BLOG</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">PRODUCTS</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">LOREM IPSUM</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">DOLOR SIT AMET</a>
+          </li>
+        </menu>
       </div>
-      <menu class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#">HOME</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">ABOUT</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">BLOG</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">PRODUCTS</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">LOREM IPSUM</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">DOLOR SIT AMET</a>
-        </li>
-      </menu>
       <div class="slider">
         <div class="slider__text">
           <p class="slider__name">Lorem Ipsum Dolor</p>
-          <p class="slider__motto">IT WILL MAKE ALL OF YOUR DREAMS COME</p>
+          <p class="slider__motto">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="slider__motto__secondary">TRUE</span></p>
+          <article class="slider__primary" lang="en">Semper sollicitudin gravida eget, <span class="slider__support">ves</span></article>
+          <article class="slider__primary" lang="en">tibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est <span class="slider__secondary">at volutpat. Morbi elementum euismod lacus id semper. <span class="slider__support2">In odio nunc, imperdiet eget aliquam quis, </span><span class="nohyphen">euismod </span>id lectus. <span class="slider__support3">Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</span></span></article>
         </div>
-        <article class="slider__article">
-          Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tircidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volupat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.
-        </article>
-        <div class="slider__images"><img src="img/iphone.png" alt=""/></div>
+        <div class="slider__images"><img class="slider__iphone"src="img/iphone.png" alt=""/></div>
       </div>
     </header>
     <section class="info">
@@ -49,7 +50,7 @@
         <div class="info__icon"><img src="info_sprite.png" alt="" /></div>
         <p class="info__title">ABOUT OUR COMPANY</p>
         <article class="info__primary" lang="en">
-          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</span><span class="info__else">Nam</span>
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary"><span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus <span class="info__insignificant">eget nisi convallis auctor</span></span><span class="info__else">. Nam</span>
         </article>
         <a class="info__more" href="#">READ MORE</a>
       </div>
@@ -57,7 +58,7 @@
         <div class="info__icon"><img src="info_sprite.png" alt="" /></div>
         <p class="info__title">ABOUT OUR COMPANY</p>
         <article class="info__primary" lang="en">
-          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</span><span class="info__else">Nam</span>
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary"><span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus <span class="info__insignificant">eget nisi convallis auctor</span></span><span class="info__else">. Nam</span>
         </article>
         <a class="info__more" href="#">READ MORE</a>
       </div>
@@ -65,19 +66,21 @@
         <div class="info__icon"><img src="info_sprite.png" alt="" /></div>
         <p class="info__title">ABOUT OUR COMPANY</p>
         <article class="info__primary" lang="en">
-          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary">ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</span><span class="info__else">Nam</span>
+          Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="info__secondary"><span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus <span class="info__insignificant">eget nisi convallis auctor</span></span><span class="info__else">. Nam</span>
         </article>
         <a class="info__more" href="#">READ MORE</a>
       </div>
     </section>
     <section class="main">
-      <div class="opinion__block">
-        <div class="opinion">
-          <p class="opinion__title">PINGBULLER</p>
-          <p class="opinion__title">STARTS HERE</p>
-          <article class="opinion__primary" lang="en">"Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae <span class="opinion__secondary">lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</span></article>
+      <div class="opinion__slider">
+        <div class="opinion__block">
+          <div class="opinion">
+            <p class="opinion__title">PINGBULLER</p>
+            <p class="opinion__title">STARTS HERE</p>
+            <article class="opinion__primary" lang="en">"Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices <span class="nohyphen">posuere</span>. Pellentesque vel lacus eget nisi conval&shylis auctor. Nam vitae <span class="opinion__secondary">lectus eu libero pellentesque pulvinar <span class="opinion__insignificant">urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl."</span></span></article>
+          </div>
+          <img class="slider__number" src="img/slider_number.png" alt=""/>
         </div>
-        <img class="slider__number" src="img/slider_number.png" alt=""/>
       </div>
       <aside>
         <p class="sidebar__name">RECENT UPDATES</p>
@@ -103,6 +106,7 @@
           </figcaption>
         </figure>
         <a class="post__more" href="#">MORE BLOG POSTS</a>
+        <a class="post__more2" href="#">READ MORE HERE</a>
       </aside>
       <div class="sponsors">
         <div class="sponsors__img"><img src="img/billabong.png" alt=""/></div>
@@ -116,19 +120,22 @@
     <footer>
       <div class="footer__info">
         <div class="info__block footer__block">
-          <!-- <h1>PITBULL</h1>
-          <h1>ER</h1>
-          <p>Copyright 2013, Pingbull AS</p> -->
+          <div class="logo footer__logo">
+            <p class="logo__line">PIGBULL</p>
+            <p class="logo__line">ER</p>
+          </div>
+          <p class="copyright">Copyright 2013, Pingbull AS</p>
           <p class="info__title">NEWS CATEGORIES</p>
-          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben<span class="info__secondary">dum in, venenatis quis</span></article>
+          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleif&shyend et, lacinia non neque. Praesent rhoncus <span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus eget nisi convallis auctor. <span class="info__support">Nam vitae lectus eu libero pellentesque <span class="info__insignificant">pul <span class="info__for960">vinar.Quisque urna risus, mattis pulvinar biben<span class="info__secondary">dum in, venenatis quis</span></span></span></span></article>
         </div>
         <div class="info__block footer__block">
           <p class="info__title">NEWS CATEGORIES</p>
-          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben<span class="info__secondary">dum in, venenatis quis</span></article>
+          <p class="info__title">RECENT COMMENTS</p>
+          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleif&shyend et, lacinia non neque. Praesent rhoncus <span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus eget nisi convallis auctor. <span class="info__support">Nam vitae lectus eu libero pellentesque <span class="info__insignificant">pulvinar.Quisque urna risus, mattis pulvi&shynar biben<span class="info__secondary">dum in, venenatis quis</span></span></span></article>
         </div>
         <div class="info__block footer__block">
           <p class="info__title">NEWS CATEGORIES</p>
-          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben<span class="info__secondary">dum in, venenatis quis</span></article>
+          <article class="info__primary" lang="en">Nunc turpis neque, feugiat eget eleif&shyend et, lacinia non neque. Praesent rhoncus <span class="nohyphen">ultrices</span> posuere. Pellentesque vel lacus eget nisi convallis auctor. <span class="info__support">Nam vitae lectus eu libero pellentesque <span class="info__insignificant">pulvinar.Quisque urna risus, mattis pulvi&shynar biben<span class="info__secondary">dum in, venenatis quis</span></span></span></article>
         </div>
       </div>
       <div class="footer__other">
