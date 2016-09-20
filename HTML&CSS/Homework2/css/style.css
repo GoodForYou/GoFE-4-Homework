@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #efefef;
+}
+
+body {
+    width: 510px;
+    height: 100%;
+    margin: auto;
+    border: 0;
+    -webkit-box-shadow: 0 0 1px 1px #d6d6d6;
+    -moz-box-shadow: 0 0 1px 1px #d6d6d6;
+    box-shadow: 0 0 1px 1px #d6d6d6;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+img {
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+
+div {
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    padding: 20px 30px 20px 30px;
+    background-color: #fff;
+}
+
+.photo,
+.feedback {
+    border: none;
+}
+
+p {
+    line-height: 1.4;
+}
