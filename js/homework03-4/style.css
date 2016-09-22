@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 800px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.questionBlock {
+    list-style: decimal inside;
+    display: list-item;
+}
+
+.questionText {
+    margin-bottom: 0;
+}
+
+.answerVariant {
+    padding: 0 15px;
+}
+
+.checkbox {
+    margin: 0;
+}
+
+.answerText {
+    line-height: 14px;
+    font-weight: normal;
+}
+
+.submitForm {
+    display: block;
+    margin: auto;
+}
