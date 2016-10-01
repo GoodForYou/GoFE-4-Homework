@@ -1,0 +1,46 @@
+.wrapper {
+  display: block;
+  margin: 10% auto;
+  width: 60%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.timer_block {
+  margin-bottom: 50px;
+  border: 15px solid black;
+  border-radius: 50px;
+  background-color: #ced7e5;
+  text-align: center;
+}
+
+#timer {
+  font-size: 155px;
+  font-weight: bold;
+}
+
+.start_pause_block {
+  display: inline-block;
+  float: left;
+}
+
+#start_pause {
+  border: 15px solid black;
+  border-radius: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+
+.clear_block {
+  display: inline-block;
+  float: right;
+}
+
+#clear {
+  border: 15px solid black;
+  border-radius: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
