@@ -1,0 +1,187 @@
+.header p {
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ed6b15;
+}
+
+.mySelectBoxClass {
+    display: inline-block;
+    width: 34%;
+    margin-top: 15px;
+    border: 1px solid #ed6b15;
+    float: left;
+    font-family: Arial;
+    color: grey;
+    text-align: center;
+}
+
+.mySelectBoxClass.customSelectHover {
+    color: black;
+}
+
+.mySelectBoxClass.customSelectOpen {
+    font-style: italic;
+}
+
+.customSelect.customSelectFocus {
+    border-color: green;
+    color: green;
+}
+
+/*buy block*/
+.buy {
+    display: inline-block;
+    float: left;
+    width: 33%
+}
+
+.buy label {
+    display: block;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.buy p {
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/checkbox-sprite.png');
+}
+
+.niceCheck input {
+    display: none;
+}
+
+/*taste block*/
+.taste {
+    display: inline-block;
+    float: right;
+}
+
+.taste p {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.taste input[type=checkbox] {
+  	position: absolute;
+  	clip: rect(0, 0, 0, 0);
+}
+
+.taste label {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.taste label:after {
+  	content: " ";
+  	display: inline-block;
+  	width: 17px;
+  	height: 17px;
+  	background: url('../img/checkbox-sprite-css.png');
+  	position: relative;
+  	top: 3px;
+  	margin-left: 5px;
+}
+
+.taste input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+
+.taste label:hover:after {
+    background-position: 0 -34px;
+}
+
+.taste input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+.sidebar {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.menu_block {
+  background-color: #ed6b15;
+}
+
+.menu {
+    width: 60%;
+    margin: auto;
+    padding-left: 0;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+    list-style: none;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    padding-left: 0;
+    width: 130px;
+    background-color: #ed6b15;
+    list-style: none;
+}
+
+.submenu_first {
+  top: 30px;
+  left: -10px;
+}
+
+.submenu > li {
+    margin: 0;
+    padding: 5px 5px;
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+
+.submenu_second {
+    top: 105px;
+    left: 124px;
+}
+
+.submenu_third {
+    top: 21px;
+    left: 124px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.submenu a {
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 5px 5px;
+    text-decoration: none;
+    vertical-align: middle;
+}

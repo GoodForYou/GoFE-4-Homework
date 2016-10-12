@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
+    <script src="js/customSelect.jquery.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <p>Open China</p>
+    </div>
+    <div class="jcarousel-wrapper">
+      <div class="jcarousel" data-jcarousel="true">
+        <ul style="left: 0px top: 0px">
+          <li><img src="img/img1.jpg" width="600px" height="400px"></li>
+          <li><img src="img/img2.jpg" width="600px" height="400px"></li>
+          <li><img src="img/img3.jpg" width="600px" height="400px"></li>
+          <li><img src="img/img4.jpg" width="600px" height="400px"></li>
+          <li><img src="img/img5.jpg" width="600px" height="400px"></li>
+        </ul>
+      </div>
+      <a href="#" class="jcarousel-control-prev inactive" data-jcarouselcontrol="true">❮</a>
+      <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">❯</a>
+      <p class="jcarousel-pagination" data-jcarouselpagination="true">
+        <a href="#1" class="active">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#4">4</a>
+        <a href="#5">5</a>
+      </p>
+    </div>
+    <div class="sidebar">
+      <div class="menu_block">
+        <ul class="menu">
+          <li><a href="#">Shanghai</a></li>
+          <li><a href="#">Guangzhou</a></li>
+          <li class="drop-down-menu"><a href="#">Beijing</a>
+            <ul class="submenu submenu_first">
+              <li><a href="#">Summer Palace</a></li>
+              <li><a href="#">Temple of Heaven</a></li>
+              <li><a href="#">Tiananmen Square</a></li>
+              <li class="drop-down-menu"><a href="#">Forbidden City</a>
+                <ul class="submenu submenu_second">
+                  <li><a href="#">Location</a></li>
+                  <li class="drop-down-menu"><a href="#">History</a>
+                    <ul class="submenu submenu_third">
+                      <li><a href="#">Construction and Ming Dynasty</a></li>
+                      <li><a href="#">Qing Dynasty</a></li>
+                      <li><a href="#">After the revolution</a></li>
+                      <li><a href="#">Under the People's Republic of China</a></li>
+                      <li><a href="#">Present</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Guided tour</a></li>
+                  <li><a href="#">Map</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Great Wall of China</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Nanjing</a></li>
+          <li><a href="#">Chongqing</a></li>
+        </ul>
+      </div>
+      <select class="mySelectBoxClass">
+        <option value="">Select your tour</option>
+        <option value="">Silk Road Tour</option>
+        <option value="">Tibet Tour</option>
+        <option value="">Train Tour</option>
+        <option value="">Golden Triangle Tour</option>
+        <option value="">Panda Tour</option>
+      </select>
+      <div class="buy">
+        <form method="#">
+          <p>What to buy in China?</p>
+          <label for="ch1">Porcelane
+            <span class="niceCheck"><input type="checkbox" id="ch1"></span
+          </label>
+          <label for="ch2">Tea
+            <span class="niceCheck"><input type="checkbox" id="ch2"></span>
+          </label>
+          <label for="ch3">Electronics
+            <span class="niceCheck"><input type="checkbox" id="ch3"></span>
+          </label>
+          <label for="ch4">Silk
+            <span class="niceCheck"><input type="checkbox" id="ch4"></span>
+          </label>
+          <label for="ch5">Qipao
+            <span class="niceCheck"><input type="checkbox" id="ch5"></span>
+          </label>
+        </form>
+      </div>
+      <div class="taste">
+        <form method="#">
+          <p>What to taste in China?</p>
+          <input type="checkbox" id="ch6">
+          <label for="ch6">Beijing Roast Duck</label>
+          <input type="checkbox" id="ch7">
+          <label for="ch7">Rice Noodles</label>
+          <input type="checkbox" id="ch8">
+          <label for="ch8">Soup Buns</label>
+          <input type="checkbox" id="ch9">
+          <label for="ch9">Hot Pot</label>
+          <input type="checkbox" id="ch10">
+          <label for="ch10">Congee</label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
