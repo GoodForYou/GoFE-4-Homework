@@ -3,18 +3,19 @@
     font-family: Arial;
     font-size: 24px;
     font-weight: bold;
-    color: #ed6b15;
+    color: #ffd73a;
 }
 
 .mySelectBoxClass {
     display: inline-block;
     width: 34%;
     margin-top: 15px;
-    border: 1px solid #ed6b15;
+    border: 1px solid #ffd73a;
     float: left;
     font-family: Arial;
     color: grey;
     text-align: center;
+    overflow: hidden;
 }
 
 .mySelectBoxClass.customSelectHover {
@@ -113,16 +114,16 @@
 
 .sidebar {
     display: block;
-    width: 40%;
+    max-width: 40%;
     margin: auto;
 }
 
 .menu_block {
-  background-color: #ed6b15;
+  background-color: #ffd73a;
 }
 
 .menu {
-    width: 60%;
+    width: 100%;
     margin: auto;
     padding-left: 0;
     font-family: Arial;
@@ -132,7 +133,7 @@
 .menu > li {
     display: inline-block;
     position: relative;
-    padding: 10px 10px;
+    padding: 10px 35px;
     list-style: none;
 }
 
@@ -144,14 +145,14 @@
     display: none;
     position: absolute;
     padding-left: 0;
-    width: 130px;
-    background-color: #ed6b15;
+    width: 108px;
+    background-color: #ffd73a;
     list-style: none;
 }
 
 .submenu_first {
   top: 30px;
-  left: -10px;
+  left: 0px;
 }
 
 .submenu > li {
@@ -163,15 +164,14 @@
     border-bottom: none;
 }
 
-
 .submenu_second {
     top: 105px;
-    left: 124px;
+    left: 108px;
 }
 
 .submenu_third {
     top: 21px;
-    left: 124px;
+    left: 108px;
 }
 
 .menu a {

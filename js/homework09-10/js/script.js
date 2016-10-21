@@ -9,5 +9,15 @@ $(function() {
     function() {
       $(this).children('.submenu').hide();
     }
-  )
+  );
+
+  $(".menu li").hover(
+    function () {
+      $(this).animate({
+        backgroundColor:"#ff4300",
+      }), 250 },
+      function () {
+        $(this).animate({
+          backgroundColor:"#ffd73a",
+        }), 250 });
 });
