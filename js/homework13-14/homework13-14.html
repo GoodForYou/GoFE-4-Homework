@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/tmpl.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Тест</h1>
+      <div class="content">
+      </div>
+      <script type="text/html" id="test">
+        <form style="text-align:center">
+          <% for(var i=0; i < data.length; i++) { %>
+            <h4><%= data[i].question %></h4>
+            <label>
+              <input type="radio" name=<%= i %> value="answer1">
+              <%= data[i].answer1 %>
+            </label>
+            <label>
+              <input type="radio" name=<%= i %> value="answer2">
+              <%= data[i].answer2 %>
+            </label>
+            <label>
+              <input type="radio" name=<%= i %> value="answer3">
+              <%= data[i].answer3 %>
+            </label>
+          <% }; %>
+          <button class="check_results" type="button">Проверить мои результаты</button>
+        </form>
+      </script>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
